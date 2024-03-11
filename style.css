@@ -2,3 +2,41 @@
   padding: 0;
   margin: 0;
 }
+
+.container {
+  display: flex;
+  gap: 27px;
+}
+
+.flex-direct-column {
+  display: flex;
+  flex-direction: column;
+  gap: 27px;
+}
+
+.flex-direct-row{
+  display: flex;
+  flex-direction: row;
+  gap: 27px;
+}
+
+.box-kecil {
+  width: 201px;
+  height: 201px;
+  background-color: lightgray;
+  border-radius: 20px;
+}
+
+.box-tinggi {
+  width: 201px;
+  height: 429px;
+  border-radius: 27px;
+  background-color: lightgray;
+}
+
+.box-panjang {
+  width: 560px;
+  height: 201px;
+  background-color: lightgray;
+  border-radius: 27px;
+}
