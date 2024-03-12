@@ -1,42 +1,220 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:display=swap');
 *{
   padding: 0;
   margin: 0;
+  font-family: 'Poppins', sans-serif;
+  src: url();
 }
-
-.container {
+.container{
+  width: 80%;
+  margin-left: auto;
+  margin-right: auto;
   display: flex;
-  gap: 27px;
+  justify-content: center;
+  padding: 50px 0px;
 }
-
 .flex-direct-column {
   display: flex;
   flex-direction: column;
+  align-items: center;
   gap: 27px;
 }
-
 .flex-direct-row{
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
+  align-items: center;
   gap: 27px;
 }
-
-.box-kecil {
-  width: 201px;
-  height: 201px;
-  background-color: lightgray;
+.top-bar{
+  position: fixed;
+  bottom: 0px;
+  width: 100vw;
+  height: 40px;
+  background-color: #D9D9D9;
+}
+.menu{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+.nav-link{
+  margin: 10px 10px 0px 10px;
+  text-decoration: none;
+  color: black;
+  font-weight: 500;
+  font-size: 15px;
+}
+.title-profesi{
+  margin-top: 30px;
+  font-size: 40px;
+  font-weight: 700;
+  text-align: center;
+}
+.tentara{
+  background-color: #D5FFDD;
   border-radius: 20px;
 }
-
-.box-tinggi {
-  width: 201px;
-  height: 429px;
-  border-radius: 27px;
-  background-color: lightgray;
+.konstruktor{
+  background-color: #FFF4DC;
+  border-radius: 20px;
 }
-
-.box-panjang {
-  width: 560px;
-  height: 201px;
-  background-color: lightgray;
-  border-radius: 27px;
+.pramugari{
+  background-color: #FFCED7;
+  border-radius: 20px;
+}
+.fotografer{
+  background-color: #E2F2FF;
+  border-radius: 20px;
+}
+.set1{
+  width: 100%;
+  height: auto;
+}
+.dokter{
+  background-color: #E9E8E2;
+  border-radius: 20px;
+}
+.pilot{
+  background-color: #E9E8E2;
+  border-radius: 20px;
+}
+.ilmuan{
+  background-color: #E9E8E2;
+  border-radius: 20px;
+}
+.pembalap{
+  background-color: #FFDBC5;
+  border-radius: 20px;
+}
+.astronout{
+  background-color: #8FC5ED;
+  border-radius: 20px;
+}
+@media(min-width: 425px) {
+  .tentara{
+    width: 289px;
+    height: 299px;
+  }
+  .konstruktor{
+    width: 288.53px;
+    height: 221px;
+  }
+  .pramugari{
+    width: 289px;
+    height: 239.85px;
+  }
+  .fotografer{
+    width: 289px;
+    height: 341px;
+  }
+  .dokter{
+    width: 288.53px;
+    height: 221px;
+  }
+  .pilot{
+    width: 288.53px;
+    height: 221px;
+  }
+  .ilmuan{
+    width: 288.53px;
+    height: 221px;
+  }
+  .pembalap{
+    width: 288.53px;
+    height: 221px;
+    border-radius: 20px;
+  }
+  .astronout{
+    width: 288.53px;
+    height: 221px;
+    border-radius: 20px;
+  }
+}
+@media(min-width: 1280px) {
+  .flex-direct-column {
+    display: flex;
+    flex-direction: column;
+    gap: 27px;
+  }
+  .flex-direct-row{
+    display: flex;
+    flex-direction: row;
+    gap: 27px;
+  }
+  .title-profesi{
+    margin-top: 83px;
+  }
+  .top-bar{
+    position: fixed;
+    top: 0px;
+  }
+  .tentara{
+    width: 490px;
+    height: 180px;
+    background-color: #D5FFDD;
+    border-radius: 20px;
+  }
+  .konstruktor{
+    width: 235px;
+    height: 180px;
+    background-color: #FFF4DC;
+    border-radius: 20px;
+  }
+  .pramugari{
+    width: 235px;
+    height: 181px;
+    background-color: #FFCED7;
+    border-radius: 20px;
+  }
+  .fotografer{
+    width: 230px;
+    height: 392px;
+    background-color: #E2F2FF;
+    border-radius: 20px;
+  }
+  .set1{
+    width: 500px;
+    height: 392px;
+    background-color: #F2F2F2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px;
+  }
+  .dokter{
+    width: 423px;
+    height: 96px;
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+  .pilot{
+    width: 423px;
+    height: 96px;
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+  .ilmuan{
+    width: 423px;
+    height: 96px;
+    background-color: #FFF;
+    border-radius: 20px;
+  }
+  .set2{
+    width: 500px;
+    height: 181px;
+    background-color: #F2F2F2;
+    border-radius: 20px;
+  }
+  .pembalap{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border-radius: 20px;
+  }
+  .astronout{
+    width: 100%;
+    height: auto;
+    background-color: #000;
+    border-radius: 20px;
+  }
 }
