@@ -6,12 +6,12 @@
   src: url();
 }
 .container{
-  width: 80%;
+  width: 95%;
   margin-left: auto;
   margin-right: auto;
   display: flex;
   justify-content: center;
-  padding: 50px 0px;
+  padding: 50px 0px 90px 0px;
 }
 .flex-direct-column {
   display: flex;
@@ -66,6 +66,7 @@
   border: none;
 }
 .tentara{
+  width: 250px;
   background-color: #D5FFDD;
   border-radius: 20px;
 }
@@ -75,23 +76,56 @@
 .tentara p {
   font-size: 14px;
 }
+.tentara .btn-profesi{
+  position: relative;
+  top: -100px;
+}
+.tentara .flex-direct-column{
+  gap: 0px;
+}
+.tentara .content{
+  position: relative;
+  top: 15px;
+}
 .petani{
+  width: 250px;
+  height: 200px;
   background-color: #FFF4DC;
   border-radius: 20px;
 }
+.petani img{
+  position: relative;
+  top: 30px;
+}
 .petani .btn-profesi{
   background-color: #E29A00;
+  position: relative;
+  top: -50px;
 }
 .pramugari{
+  width: 250px;
+  height: 200px;
   background-color: #FFCED7;
   border-radius: 20px;
 }
+.pramugari img{
+  position: relative;
+  top: 30px;
+}
 .pramugari .btn-profesi{
+  position: relative;
+  top: -50px;
   background-color: #FF5573;
 }
 .fotografer{
+  width: 250px;
+  padding: 30px 0px;
   background-color: #E2F2FF;
   border-radius: 20px;
+}
+.fotografer .deskripsi-profesi{
+  text-align: center;
+  width: 60%;
 }
 .fotografer .btn-profesi{
   background-color: #3279AF;
@@ -101,50 +135,116 @@
   height: auto;
 }
 .dokter{
+  width: 250px;
+  height: 200px;
   background-color: #E9E8E2;
   border-radius: 20px;
 }
+.dokter img{
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 30px;
+}
+.dokter .title-profesi{
+  display: none;
+}
 .dokter .btn-profesi{
+  position: relative;
+  top: -50px;
   background-color: #CAC8B3;
 }
 .pilot{
+  width: 250px;
+  height: 200px;
   background-color: #E9E8E2;
   border-radius: 20px;
 }
+.pilot img{
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 30px;
+}
+.pilot .title-profesi{
+  display: none;
+}
 .pilot .btn-profesi{
+  position: relative;
+  top: -50px;
   background-color: #CAC8B3;
 }
 .ilmuan{
+  width: 250px;
+  height: 200px;
   background-color: #E9E8E2;
   border-radius: 20px;
 }
+.ilmuan img{
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 30px;
+}
+.ilmuan .title-profesi{
+  display: none;
+}
 .ilmuan .btn-profesi{
+  position: relative;
+  top: -50px;
   background-color: #CAC8B3;
 }
 .pembalap{
   background-color: #FFDBC5;
   border-radius: 20px;
+  width: 250px;
+  height: 200px;
+}
+.pembalap img{
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 30px;
+}
+.pembalap .title-profesi{
+  display: none;
 }
 .pembalap .btn-profesi{
+  position: relative;
+  top: -50px;
   background-color: #E36415;
 }
 .astronout{
   background-color: #8FC5ED;
   border-radius: 20px;
+  width: 250px;
+  height: 200px;
+}
+.astronout img{
+  width: 170px;
+  height: 170px;
+  position: relative;
+  top: 30px;
+}
+.astronout .title-profesi{
+  display: none;
 }
 .astronout .btn-profesi{
+  position: relative;
+  top: -50px;
   background-color: #275E87;
 }
 @media(min-width: 425px) {
   .container{
+    width: 80%;
     padding: 70px 0px 90px 0px;
   }
   .tentara{
     width: 289px;
     height: 299px;
   }
-  .tentara .flex-direct-column{
-    gap: 0px;
+  .tentara .content{
+    top: 0px;
   }
   .tentara img{
     position: relative;
@@ -172,7 +272,7 @@
   .petani img{
     width: 213.26px;
     height: 208.72px;
-    position: relative;
+    /* position: relative; */
     top: 10px;
   }
   .petani .btn-profesi{
@@ -206,18 +306,22 @@
     top: -70px;
   }
   .fotografer{
+    margin-top: 70px;
     width: 289px;
-    height: 341px;
+    height: 314px;
+    padding: 0px 0px;
+  }
+  .fotografer .content{
+    position: relative;
+    bottom: 40px;
   }
   .fotografer .flex-direct-column{
-    gap: 0px;
+    gap: 5px;
     align-items: center;
   }
   .fotografer img{
     width: 230px;
     height: 230px;
-    /* position: relative;
-    top: -50px; */
   }
   .fotografer .title-profesi{
     font-size: 24px;
@@ -228,7 +332,6 @@
   }
   .fotografer .deskripsi-profesi{
     font-size: 12px;
-    text-align: center;
     width: 60%;
     line-height: 18px;
   }
@@ -253,16 +356,12 @@
     position: relative;
     top: 10px;
   }
-  .dokter .title-profesi{
-    display: none;
-  }
   .dokter .btn-profesi{
     margin-top: 0px;
     width: 212.41px;
     height: 45.43px;
     font-weight: 500;
     font-size: 20px;
-    position: relative;
     top: -70px;
   }
   .pilot{
@@ -272,11 +371,7 @@
   .pilot img{
     width: 213px;
     height: 213px;
-    position: relative;
     top: 10px;
-  }
-  .pilot .title-profesi{
-    display: none;
   }
   .pilot .btn-profesi{
     margin-top: 0px;
@@ -284,7 +379,6 @@
     height: 45.43px;
     font-weight: 500;
     font-size: 20px;
-    position: relative;
     top: -70px;
   }
   .ilmuan{
@@ -294,11 +388,7 @@
   .ilmuan img{
     width: 213px;
     height: 213px;
-    position: relative;
     top: 10px;
-  }
-  .ilmuan .title-profesi{
-    display: none;
   }
   .ilmuan .btn-profesi{
     margin-top: 0px;
@@ -306,7 +396,6 @@
     height: 45.43px;
     font-weight: 500;
     font-size: 20px;
-    position: relative;
     top: -70px;
   }
   .pembalap{
@@ -316,11 +405,7 @@
   .pembalap img{
     width: 213.26px;
     height: 208.72px;
-    position: relative;
     top: 15px;
-  }
-  .pembalap .title-profesi{
-    display: none;
   }
   .pembalap .btn-profesi{
     margin-top: 0px;
@@ -329,8 +414,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    position: relative;
-    top: -70px;
+    top: -65px;
   }
   .astronout{
     width: 288.53px;
@@ -342,9 +426,6 @@
     position: relative;
     top: 15px;
   }
-  .astronout .title-profesi{
-    display: none;
-  }
   .astronout .btn-profesi{
     margin-top: 0px;
     width: 212.41px;
@@ -352,8 +433,7 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
-    position: relative;
-    top: -70px;
+    top: -65px;
   }
 }
 @media(min-width: 1280px) {
@@ -395,22 +475,15 @@
     gap: 0px;
   }
   .tentara img{
-    /* position: relative; */
     top: -50px;
   }
   .tentara .desc-profesi{
-    /* position: relative; */
     top: -30px;
   }
   .tentara .btn-profesi{
     position: static;
-    /* top: -80px; */
-    /* margin-top: 30px; */
     width: 240px;
     height: 37px;
-    /* font-weight: 500;
-    font-size: 20px;
-    line-height: 30px; */
   }
   .petani{
     width: 235px;
@@ -419,17 +492,11 @@
   .petani img{
     width: 173.7px;
     height: 170px;
-    /* position: relative;
-    top: 10px; */
   }
   .petani .btn-profesi{
     margin-top: 30px;
     width: 173px;
     height: 37px;
-    /* font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    position: relative; */
     top: -90px;
   }
   .pramugari{
@@ -439,30 +506,27 @@
   .pramugari img{
     width: 170px;
     height: 170px;
-    /* position: relative; */
     top: 10px;
   }
   .pramugari .btn-profesi{
     margin-top: 30px;
     width: 173px;
     height: 37px;
-    /* font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
-    position: relative; */
     top: -90px;
   }
   .fotografer{
+    margin-top: 0px;
     width: 230px;
     height: 392px;
   }
   .fotografer .content{
     margin-top: 30px;
+    position: static;
+    bottom: 0px;
   }
   .fotografer .flex-direct-column{
     gap: 5px;
     display: flex;
-    align-items: center;
     justify-content: center;
   }
   .fotografer img{
@@ -473,18 +537,10 @@
     font-size: 20px;
     line-height: 30px;
   }
-  /* .fotografer .deskripsi-profesi{
-    font-size: 12px;
-    text-align: center;
-    width: 60%;
-  } */
   .fotografer .btn-profesi{
     margin-top: 30px;
     width: 173px;
     height: 37px;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 30px;
     position: relative;
     top: -20px;
   }
@@ -526,7 +582,6 @@
     height: 22px;
     border-radius: 10px;
     background-color: #D8D6C1;
-    font-weight: 500;
     font-size: 12px;
     color: #fff;
     position: static;
@@ -566,7 +621,6 @@
     height: 22px;
     border-radius: 10px;
     background-color: #D8D6C1;
-    font-weight: 500;
     font-size: 12px;
     color: #fff;
     top: 0px;
@@ -605,7 +659,6 @@
     height: 22px;
     border-radius: 10px;
     background-color: #D8D6C1;
-    font-weight: 500;
     font-size: 12px;
     color: #fff;
     top: 0px;
@@ -653,7 +706,6 @@
     height: 55px;
     border-radius: 10px;
     background-color: #D8D6C1;
-    font-weight: 500;
     font-size: 15px;
     color: #fff;
     top: 0px;
@@ -689,7 +741,6 @@
     height: 55px;
     border-radius: 10px;
     background-color: #D8D6C1;
-    font-weight: 500;
     font-size: 15px;
     color: #fff;
     top: 0px;
