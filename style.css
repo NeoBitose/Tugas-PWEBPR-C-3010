@@ -29,8 +29,9 @@
   position: fixed;
   bottom: 0px;
   width: 100vw;
-  height: 40px;
+  height: 70px;
   background-color: #D9D9D9;
+  z-index: 10;
 }
 .menu{
   width: 100%;
@@ -38,33 +39,62 @@
   justify-content: center;
 }
 .nav-link{
-  margin: 10px 10px 0px 10px;
+  margin: 25px 10px 0px 10px;
   text-decoration: none;
   color: black;
   font-weight: 500;
   font-size: 15px;
 }
-.title-profesi{
+.title-main{
   margin-top: 30px;
-  font-size: 40px;
+  font-size: 32px;
   font-weight: 700;
   text-align: center;
+}
+.title-profesi{
+  font-weight: 500;
+  font-size: 24px;
+  text-align: center;
+}
+.btn-profesi{
+  width: 212.41px;
+  height: 45.43px;
+  font-weight: 500;
+  font-size: 20px;
+  color: #fff;
+  border-radius: 15px;
+  border: none;
 }
 .tentara{
   background-color: #D5FFDD;
   border-radius: 20px;
 }
-.konstruktor{
+.tentara .btn-profesi{
+  background-color: #399349;
+}
+.tentara p {
+  font-size: 14px;
+}
+.petani{
   background-color: #FFF4DC;
   border-radius: 20px;
+}
+.petani .btn-profesi{
+  background-color: #E29A00;
 }
 .pramugari{
   background-color: #FFCED7;
   border-radius: 20px;
 }
+.pramugari .btn-profesi{
+  background-color: #FF5573;
+}
 .fotografer{
   background-color: #E2F2FF;
   border-radius: 20px;
+}
+.fotografer .btn-profesi{
+  background-color: #3279AF;
 }
 .set1{
   width: 100%;
@@ -74,103 +104,389 @@
   background-color: #E9E8E2;
   border-radius: 20px;
 }
+.dokter .btn-profesi{
+  background-color: #CAC8B3;
+}
 .pilot{
   background-color: #E9E8E2;
   border-radius: 20px;
+}
+.pilot .btn-profesi{
+  background-color: #CAC8B3;
 }
 .ilmuan{
   background-color: #E9E8E2;
   border-radius: 20px;
 }
+.ilmuan .btn-profesi{
+  background-color: #CAC8B3;
+}
 .pembalap{
   background-color: #FFDBC5;
   border-radius: 20px;
+}
+.pembalap .btn-profesi{
+  background-color: #E36415;
 }
 .astronout{
   background-color: #8FC5ED;
   border-radius: 20px;
 }
+.astronout .btn-profesi{
+  background-color: #275E87;
+}
 @media(min-width: 425px) {
+  .container{
+    padding: 70px 0px 90px 0px;
+  }
   .tentara{
     width: 289px;
     height: 299px;
   }
-  .konstruktor{
+  .tentara .flex-direct-column{
+    gap: 0px;
+  }
+  .tentara img{
+    position: relative;
+    top: -50px;
+  }
+  .tentara .desc-profesi{
+    position: relative;
+    top: -45px;
+  }
+  .tentara .btn-profesi{
+    position: absolute;
+    top: -80px;
+    margin-top: 30px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 15px;
+  }
+  .petani{
     width: 288.53px;
     height: 221px;
+  }
+  .petani img{
+    width: 213.26px;
+    height: 208.72px;
+    position: relative;
+    top: 10px;
+  }
+  .petani .btn-profesi{
+    margin-top: 0px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: -70px;
   }
   .pramugari{
     width: 289px;
     height: 239.85px;
   }
+  .pramugari img{
+    width: 209.06px;
+    height: 226.53px;
+    position: relative;
+    top: 15px;
+  }
+  .pramugari .btn-profesi{
+    margin-top: 0px;
+    width: 212.75px;
+    height: 49.3px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: -70px;
+  }
   .fotografer{
     width: 289px;
     height: 341px;
+  }
+  .fotografer .flex-direct-column{
+    gap: 0px;
+    align-items: center;
+  }
+  .fotografer img{
+    width: 230px;
+    height: 230px;
+    /* position: relative;
+    top: -50px; */
+  }
+  .fotografer .title-profesi{
+    font-size: 24px;
+  }
+  .fotografer .desc-profesi{
+    position: relative;
+    top: 20px;
+  }
+  .fotografer .deskripsi-profesi{
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+    line-height: 18px;
+  }
+  .fotografer .btn-profesi{
+    position: absolute;
+    top: -80px;
+    margin-top: 30px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 15px;
   }
   .dokter{
     width: 288.53px;
     height: 221px;
   }
+  .dokter img{
+    width: 213px;
+    height: 213px;
+    position: relative;
+    top: 10px;
+  }
+  .dokter .title-profesi{
+    display: none;
+  }
+  .dokter .btn-profesi{
+    margin-top: 0px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+  }
   .pilot{
     width: 288.53px;
     height: 221px;
+  }
+  .pilot img{
+    width: 213px;
+    height: 213px;
+    position: relative;
+    top: 10px;
+  }
+  .pilot .title-profesi{
+    display: none;
+  }
+  .pilot .btn-profesi{
+    margin-top: 0px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    top: -70px;
   }
   .ilmuan{
     width: 288.53px;
     height: 221px;
   }
+  .ilmuan img{
+    width: 213px;
+    height: 213px;
+    position: relative;
+    top: 10px;
+  }
+  .ilmuan .title-profesi{
+    display: none;
+  }
+  .ilmuan .btn-profesi{
+    margin-top: 0px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    position: relative;
+    top: -70px;
+  }
   .pembalap{
     width: 288.53px;
     height: 221px;
-    border-radius: 20px;
+  }
+  .pembalap img{
+    width: 213.26px;
+    height: 208.72px;
+    position: relative;
+    top: 15px;
+  }
+  .pembalap .title-profesi{
+    display: none;
+  }
+  .pembalap .btn-profesi{
+    margin-top: 0px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: -70px;
   }
   .astronout{
     width: 288.53px;
     height: 221px;
-    border-radius: 20px;
+  }
+  .astronout img{
+    width: 213.26px;
+    height: 208.72px;
+    position: relative;
+    top: 15px;
+  }
+  .astronout .title-profesi{
+    display: none;
+  }
+  .astronout .btn-profesi{
+    margin-top: 0px;
+    width: 212.41px;
+    height: 45.43px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: -70px;
   }
 }
 @media(min-width: 1280px) {
+  .container{
+    padding: 50px 0px;
+  }
   .flex-direct-column {
-    display: flex;
     flex-direction: column;
-    gap: 27px;
   }
   .flex-direct-row{
-    display: flex;
     flex-direction: row;
-    gap: 27px;
   }
-  .title-profesi{
+  .title-main{
     margin-top: 83px;
+    font-size: 40px;
   }
   .top-bar{
     position: fixed;
     top: 0px;
+    height: 50px ;
+  }
+  .nav-link{
+    margin: 15px 10px 0px 10px;
+  }
+  .title-profesi{
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 48px;
   }
   .tentara{
     width: 490px;
     height: 180px;
-    background-color: #D5FFDD;
-    border-radius: 20px;
   }
-  .konstruktor{
+  .tentara .flex-direct-column{
+    align-items: start;
+    gap: 5px;
+  }
+  .tentara .flex-direct-row{
+    gap: 0px;
+  }
+  .tentara img{
+    /* position: relative; */
+    top: -50px;
+  }
+  .tentara .desc-profesi{
+    /* position: relative; */
+    top: -30px;
+  }
+  .tentara .btn-profesi{
+    position: static;
+    /* top: -80px; */
+    /* margin-top: 30px; */
+    width: 240px;
+    height: 37px;
+    /* font-weight: 500;
+    font-size: 20px;
+    line-height: 30px; */
+  }
+  .petani{
     width: 235px;
     height: 180px;
-    background-color: #FFF4DC;
-    border-radius: 20px;
+  }
+  .petani img{
+    width: 173.7px;
+    height: 170px;
+    /* position: relative;
+    top: 10px; */
+  }
+  .petani .btn-profesi{
+    margin-top: 30px;
+    width: 173px;
+    height: 37px;
+    /* font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative; */
+    top: -90px;
   }
   .pramugari{
     width: 235px;
     height: 181px;
-    background-color: #FFCED7;
-    border-radius: 20px;
+  }
+  .pramugari img{
+    width: 170px;
+    height: 170px;
+    /* position: relative; */
+    top: 10px;
+  }
+  .pramugari .btn-profesi{
+    margin-top: 30px;
+    width: 173px;
+    height: 37px;
+    /* font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative; */
+    top: -90px;
   }
   .fotografer{
     width: 230px;
     height: 392px;
-    background-color: #E2F2FF;
-    border-radius: 20px;
+  }
+  .fotografer .content{
+    margin-top: 30px;
+  }
+  .fotografer .flex-direct-column{
+    gap: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  .fotografer img{
+    width: 160px;
+    height: 160px;
+  }
+  .fotografer .title-profesi{
+    font-size: 20px;
+    line-height: 30px;
+  }
+  /* .fotografer .deskripsi-profesi{
+    font-size: 12px;
+    text-align: center;
+    width: 60%;
+  } */
+  .fotografer .btn-profesi{
+    margin-top: 30px;
+    width: 173px;
+    height: 37px;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
+    position: relative;
+    top: -20px;
   }
   .set1{
     width: 500px;
@@ -185,19 +501,119 @@
     width: 423px;
     height: 96px;
     background-color: #FFF;
-    border-radius: 20px;
+  }
+  .dokter img{
+    width: 70px;
+    height: 70px;
+  }
+  .dokter .title-profesi{
+    display: block;
+  }
+  .dokter .flex-direct-column{
+    align-items: start;
+    gap: 5px;
+  }
+  .dokter .flex-direct-row{
+    gap: 10px;
+  }
+  .dokter .content{
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+  .dokter .btn-profesi{
+    width: 149px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #D8D6C1;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    position: static;
+    top: 0px;
+  }
+  .dokter .title-profesi{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
   }
   .pilot{
     width: 423px;
     height: 96px;
     background-color: #FFF;
-    border-radius: 20px;
+  }
+  .pilot img{
+    width: 70px;
+    height: 70px;
+  }
+  .pilot .title-profesi{
+    display: block;
+  }
+  .pilot .flex-direct-column{
+    align-items: start;
+    gap: 5px;
+  }
+  .pilot .flex-direct-row{
+    gap: 10px;
+  }
+  .pilot .content{
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+  .pilot .btn-profesi{
+    width: 149px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #D8D6C1;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    top: 0px;
+  }
+  .pilot .title-profesi{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
   }
   .ilmuan{
     width: 423px;
     height: 96px;
     background-color: #FFF;
-    border-radius: 20px;
+  }
+  .ilmuan img{
+    width: 70px;
+    height: 70px;
+  }
+  .ilmuan .title-profesi{
+    display: block;
+  }
+  .ilmuan .flex-direct-column{
+    align-items: start;
+    gap: 5px;
+  }
+  .ilmuan .flex-direct-row{
+    gap: 10px;
+  }
+  .ilmuan .content{
+    position: relative;
+    top: 15px;
+    left: 20px;
+  }
+  .ilmuan .btn-profesi{
+    width: 149px;
+    height: 22px;
+    border-radius: 10px;
+    background-color: #D8D6C1;
+    font-weight: 500;
+    font-size: 12px;
+    color: #fff;
+    top: 0px;
+  }
+  .ilmuan .title-profesi{
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 30px;
   }
   .set2{
     width: 500px;
@@ -205,16 +621,84 @@
     background-color: #F2F2F2;
     border-radius: 20px;
   }
+  .set2 .flex-direct-row{
+    gap: 5px;
+  }
+  .set2 .content{
+    position: relative;
+    top: 10px;
+    left: 5px;
+  }
   .pembalap{
-    width: 100%;
-    height: auto;
-    background-color: #000;
-    border-radius: 20px;
+    background-color: transparent;
+  }
+  .pembalap img{
+    width: 120px;
+    height: 120px;
+    top: 8px;
+  }
+  .pembalap .title-profesi{
+    display: block;
+  }
+  .pembalap .title-profesi{
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .pembalap .desc-profesi{
+    position: relative;
+    top: 15px;
+  }
+  .pembalap .btn-profesi{
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #D8D6C1;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    top: 0px;
+  }
+  .pembalap .flex-direct-column{
+    align-items: start;
+    gap: 0px;
+  }
+  .pembalap .flex-direct-row{
+    gap: 0px;
   }
   .astronout{
-    width: 100%;
-    height: auto;
-    background-color: #000;
-    border-radius: 20px;
+    background-color: transparent;
+  }
+  .astronout img{
+    width: 120px;
+    height: 120px;
+    top: 8px;
+  }
+  .astronout .title-profesi{
+    display: block;
+  }
+  .astronout .title-profesi{
+    font-weight: 500;
+    font-size: 15px;
+  }
+  .astronout .desc-profesi{
+    position: relative;
+    top: 15px;
+  }
+  .astronout .btn-profesi{
+    width: 100px;
+    height: 55px;
+    border-radius: 10px;
+    background-color: #D8D6C1;
+    font-weight: 500;
+    font-size: 15px;
+    color: #fff;
+    top: 0px;
+  }
+  .astronout .flex-direct-column{
+    align-items: start;
+    gap: 0px;
+  }
+  .astronout .flex-direct-row{
+    gap: 0px;
   }
 }
