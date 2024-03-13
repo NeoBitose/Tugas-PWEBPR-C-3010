@@ -561,6 +561,7 @@
   .dokter img{
     width: 70px;
     height: 70px;
+    top: -5px;
   }
   .dokter .title-profesi{
     display: block;
@@ -600,6 +601,7 @@
   .pilot img{
     width: 70px;
     height: 70px;
+    top: -5px;
   }
   .pilot .title-profesi{
     display: block;
@@ -638,6 +640,7 @@
   .ilmuan img{
     width: 70px;
     height: 70px;
+    top: -5px;
   }
   .ilmuan .title-profesi{
     display: block;
