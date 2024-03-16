@@ -81,8 +81,9 @@
 .tentara .btn-profesi{
   background-color: #399349;
 }
-.tentara p {
+.tentara .deskripsi-profesi {
   font-size: 14px;
+  font-weight: 500;
 }
 .tentara .btn-profesi{
   position: relative;
@@ -134,6 +135,10 @@
 .fotografer .deskripsi-profesi{
   text-align: center;
   width: 60%;
+  font-size: 12px;
+  width: 60%;
+  line-height: 18px;
+  font-weight: 500;
 }
 .fotografer .btn-profesi{
   background-color: #3279AF;
@@ -464,7 +469,7 @@
     height: 50px ;
   }
   .nav-link{
-    margin: 15px 10px 0px 10px;
+    margin: 15px 15px 0px 15px;
   }
   .title-profesi{
     font-weight: 500;
@@ -568,6 +573,7 @@
     width: 423px;
     height: 96px;
     background-color: #FFF;
+    border: 1px solid #D8D6C1;
   }
   .dokter img{
     width: 70px;
@@ -608,6 +614,7 @@
     width: 423px;
     height: 96px;
     background-color: #FFF;
+    border: 1px solid #D8D6C1;
   }
   .pilot img{
     width: 70px;
@@ -647,6 +654,7 @@
     width: 423px;
     height: 96px;
     background-color: #FFF;
+    border: 1px solid #D8D6C1;
   }
   .ilmuan img{
     width: 70px;
